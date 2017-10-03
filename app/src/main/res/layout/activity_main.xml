@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_nature"
+    tools:context="com.novalfakhri.mytodomvp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_alignParentTop="true"
+       style="@style/PaddingLeftRight_10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="@dimen/text_16sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_todo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_title_bar">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        style="@style/PaddingLeftRight_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/dimen_5dp">
+
+        <EditText
+            android:id="@+id/et_todo"
+            style="@style/PaddingLeftRight_10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_border"
+            android:hint="@string/write_todo"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_add_todo"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:src="@drawable/ic_add"
+            android:background="@drawable/round_border"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

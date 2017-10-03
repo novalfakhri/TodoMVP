@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PaddingLeftRight_20dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical">
+
+    <CheckBox
+        android:id="@+id/checkbox_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:buttonTint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_todo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLength="30"
+        android:text="mangan turu ngoding"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16sp" />
+
+    <ImageView
+        android:id="@+id/iv_item_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:src="@drawable/ic_edit" />
+
+    <ImageView
+        android:id="@+id/iv_item_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:src="@drawable/ic_delete" />
+
+</LinearLayout>
